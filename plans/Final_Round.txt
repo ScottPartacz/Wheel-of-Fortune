@@ -1,0 +1,40 @@
+temp = random value from game_phrases
+
+game_phrase = temp.key
+
+display_word = list with len of game_phrase with "_" for letters and " " for spaces
+
+hint = temp.value
+
+timelimit = 30?
+
+counter = 0
+
+letters = ["R","S","T","L","N","E"]
+
+pick 3 consonants and 1 vowel
+
+
+letters.append(input())
+
+for x in game_phrase:
+    for y in letters:
+        if y is x:
+            display_word[counter] = guess
+    counter += 1
+
+print (display_word)
+
+timer start
+
+while(timer < timelimit)
+
+    guess = input
+
+    if guess == game_phrase
+        you won
+
+    else
+        nope
+
+
