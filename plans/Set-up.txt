@@ -1,0 +1,17 @@
+
+starting balance:
+    player 1 = 0
+    player 2 = 0
+    player 3 = 0 
+
+round_counter = 1
+
+making wheel:
+    wheel = ["Lose a Turn","BANKRUPT"]
+    for x in range (2,24)
+        wheel[x] = (50 * x)
+
+#get game_phrases
+#keys being the word or phrase, value being hint
+file = open (name.json),r)
+file = json.dump(game_phrases, file)
