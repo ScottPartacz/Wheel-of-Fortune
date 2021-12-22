@@ -1,0 +1,12 @@
+
+
+spin = random output from wheel
+
+    if spin is a number:
+        return spin
+    
+    if spin is BANKRUPT:
+        return 0
+    
+    if spin is Lose A Turn:
+        return 1
