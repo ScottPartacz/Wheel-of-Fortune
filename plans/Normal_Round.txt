@@ -1,0 +1,92 @@
+ temp = random value from game_phrases
+
+game_phrase = temp.key
+
+display_word = list with len of game_phrase with "_" for letters and " " for spaces
+
+hint = temp.value
+
+ 
+ while (True):
+    spin_value = 0
+    correct_guesses = 0
+    flag = False
+
+    if player_turn == 4:
+        player_turn = 1
+
+    spin_value = spin()
+
+    if spin_value == 1:
+
+        player_turn += 1
+        coutinue
+
+    elif spin_value == 0:
+        if player_turn == 1:
+            player_1 = 0
+        elif player_turn == 2:
+            player_2  = 0
+        elif player_turn == 3:
+            player_3  = 0
+    while(True):
+        occurances = 0
+
+        solve the puzzle? y/n:
+        
+        if y:
+            solve = input()
+
+            if solve == game_phrase
+                flag = True
+                break
+
+        guess = input()
+        if correct_guesses > 0 and player_* >= 250:
+            buy vowel? y/n
+            if y:
+                vowel = input()
+                if player_turn == 1:
+                    player_1 -= 250
+                elif player_turn == 2:
+                    player_2 -= 250
+                elif player_turn == 3:
+                    player_3 -= 250
+                for x in game_phrase:
+                    if guess is x:
+                        display_word[counter] = guess
+                        occurances += 1
+            if occurances = 0:
+                break
+        for x in game_phrase:
+            if guess is x:
+                display_word[counter] = guess
+                occurances += 1
+            counter += 1
+        else:
+            if player_turn == 1:
+                player_1 += spin_value * occurances
+            elif player_turn == 2:
+                player_2 += spin_value * occurances
+            elif player_turn == 3:
+                player_3 += spin_value * occurances
+
+        if occurances = 0:
+            break
+        
+        correct_guesses += 1
+
+
+
+    if flag:
+        round_counter += 1
+        
+        if player_turn == 1:
+            player_1 += round_win_bonus*round_counter
+        elif player_turn == 2:
+            player_2 += round_win_bonus*round_counter
+        elif player_turn == 3:
+            player_3 += round_win_bonus*round_counter
+        break
+    
+    player_turn += 1
