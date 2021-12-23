@@ -28,7 +28,7 @@ player 1 then player 2 then player 3
 
             3. optional(buy vowels) only after one correct consonant guess
 
-                check to make sure the player has 250 in there round balance and has guess a correct consonant:
+                check to make sure the player has 250 in there round balance and has guessed a correct consonant:
 
                     player guesses a vowel:
                         
@@ -45,6 +45,8 @@ player 1 then player 2 then player 3
 
                         player wins the round and their round balance is added to there bank balance
                         all players round balance resets and the next round starts
+                        
+                    else: next person's turn 
     
 
 Final Round:
