@@ -63,7 +63,7 @@ get a random word from the csv file
 
                         player wins the round and their round balance is added to there bank balance
 
-                        all players round balance resets and the next round starts
+                        all players round balance resets and the next round starts (normal round or final round depending the the round number)
 
                     else: next person's turn 
     
