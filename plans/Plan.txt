@@ -31,7 +31,7 @@ get a random word from the csv file
 
                 if BANKRUPT: lose your round balance (not your bank balance) and lose your Turn
 
-                if lose turn: lose your turn
+                else if lose turn: lose your turn
 
                 else: set number too consonant multiplier 
 
@@ -73,8 +73,9 @@ Final Round:
 1 player:
 
 find the player with the highest bank balance:
-    if its a tie:
     
+    if its a tie:
+
         coin flip
 
 get a random word from the csv file
@@ -83,7 +84,7 @@ reveal from the word the following letters : R S T L N E
 
 ask player for 3 more consonants and 1 vowel in that order
 
-now reveal from the word the 4 letters choosen
+now reveal from the word the 4 letters chosen
 
 the player now has a number of guesses or a time limit to solve the puzzle:
 
