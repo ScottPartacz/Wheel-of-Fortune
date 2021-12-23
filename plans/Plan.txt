@@ -30,7 +30,9 @@ get a random word from the csv file
             1. spin wheel
 
                 if BANKRUPT: lose your round balance (not your bank balance) and lose your Turn
+
                 if lose turn: lose your turn
+
                 else: set number too consonant multiplier 
 
             2. guess consonants
@@ -38,6 +40,7 @@ get a random word from the csv file
                 player guesses a consonant
 
                     if consonant is in the phrase: reveal all occurances and add (consonant multiplier * occurances) to round balance
+
                     else: next person's turn
 
             3. optional(buy vowels) only after one correct consonant guess
@@ -47,6 +50,7 @@ get a random word from the csv file
                     player guesses a vowel:
                         
                         if the vowel is in the phrase reveal all occurances
+
                         else: next person's turn 
 
                         alaways(remove 250 from the players round balance) no matter if its there or not
@@ -58,6 +62,7 @@ get a random word from the csv file
                     if guess is the phrase:
 
                         player wins the round and their round balance is added to there bank balance
+
                         all players round balance resets and the next round starts
 
                     else: next person's turn 
@@ -69,6 +74,7 @@ Final Round:
 
 find the player with the highest bank balance:
     if its a tie:
+    
         coin flip
 
 get a random word from the csv file
