@@ -1,0 +1,78 @@
+
+make 3 players with a starting bank balance of 0
+
+get a random word from the csv file
+
+Round 1 and 2:
+
+3 players
+
+player 1 then player 2 then player 3
+
+    Turn:
+
+        loop:
+
+            1. spin wheel
+
+                if BANKRUPT: lose your round balance (not your bank balance) and lose your Turn
+                if lose turn: lose your turn
+                else: set number too consonant multiplier 
+
+            2. guess consonants
+
+                player guesses a consonant
+
+                    if consonant is in the phrase: reveal all occurances and add (consonant multiplier * occurances) to round balance
+                    else: next person's turn
+
+            3. optional(buy vowels) only after one correct consonant guess
+
+                check to make sure the player has 250 in there round balance and has guess a correct consonant:
+
+                    player guesses a vowel:
+                        
+                        if the vowel is in the phrase reveal all occurances
+                        else: next person's turn 
+
+                        alaways(remove 250 from the players round balance) no matter if its there or not
+
+            4. optional(guess puzzle) before any step after spinning the wheel
+
+                player guesses the phrase
+
+                    if guess is the phrase:
+
+                        player wins the round and their round balance is added to there bank balance
+                        all players round balance resets and the next round starts
+    
+
+Final Round:
+
+1 player:
+
+find the player with the highest bank balance:
+    if its a tie:
+        coin flip
+
+get a random word from the csv file
+
+reveal from the word the following letters : R S T L N E
+
+ask player for 3 more consonants and 1 vowel in that order
+
+now reveal from the word the 4 letters choosen
+
+the player now has a number of guesses or a time limit to solve the puzzle:
+
+    if solved:
+
+        player wins the game and their bank balance
+
+    else:
+
+        player loses =(
+
+
+
+        
