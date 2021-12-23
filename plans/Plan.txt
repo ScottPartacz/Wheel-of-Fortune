@@ -1,13 +1,27 @@
+functions:
 
-make 3 players with a starting bank balance of 0
+    spin: spin.txt
+    guess consonant: step 2 in turn
+    guess vowel: step 3 in turn
+    rounds: rounds 1 and round 2
+    final_round: final round
 
-get a random word from the csv file
+    main:  
+
+        make 3 players with a starting bank balance of 0
+        
+        call round function to start the round pass bank values return bank values (run two times or for as many times rounds you want)
+
+        call final_round pass player with the highest bank vaule
+
 
 Round 1 and 2:
 
 3 players
 
-player 1 then player 2 then player 3
+player 1 then player 2 then player 3 (define order)
+
+get a random word from the csv file
 
     Turn:
 
@@ -45,7 +59,7 @@ player 1 then player 2 then player 3
 
                         player wins the round and their round balance is added to there bank balance
                         all players round balance resets and the next round starts
-                        
+
                     else: next person's turn 
     
 
