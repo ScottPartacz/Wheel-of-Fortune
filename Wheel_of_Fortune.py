@@ -11,6 +11,7 @@ for x in range (2,19):
 
 file = open("phrases.json","r")
 phrases_hints = json.load(file)
+file.close()
 used_phrases = []
 
 def findphrase():
