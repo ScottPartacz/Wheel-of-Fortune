@@ -158,39 +158,43 @@ def rounds(bank):
             if wrong:
                 player_turn += 1
                 continue    
-        
-            if round_balance[player_turn-1] >= 250:
+            while(True):
+                if round_balance[player_turn-1] >= 250:
 
-                print("\nwould you like to buy a vowel y/n\n")
-                time.sleep(1)
-                yes_no = input().lower()
+                    print("\nwould you like to buy a vowel y/n\n")
+                    time.sleep(1)
+                    yes_no = input().lower()
 
-                if yes_no == "y":
-                    while(True):
-                        flag = False
-                        print("please enter your guess\n")
-                        time.sleep(1)
-                        guess = input().lower()
+                    if yes_no == "y":
+                        while(True):
+                            flag = False
+                            print("please enter your guess\n")
+                            time.sleep(1)
+                            guess = input().lower()
 
-                        for x in guesslist:
-                            if guess.isnumeric() or len(guess) > 1 or len(guess) <= 0 or guess == x or guess not in ["a","e","i","o","u"]:
-                                print("invaild input\n")
-                                flag = True
-                                break
-                        if flag:
-                            continue
+                            for x in guesslist:
+                                if guess.isnumeric() or len(guess) > 1 or len(guess) <= 0 or guess == x or guess not in ["a","e","i","o","u"]:
+                                    print("invaild input\n")
+                                    flag = True
+                                    break
+                            if flag:
+                                continue
 
-                        if guess in phrase.lower():
-                            for x in range(0,len(phrase)):
-                                if guess == phrase[x].lower():
-                                    display_word[x] = phrase[x]
-                            print(" ".join(display_word))
+                            if guess in phrase.lower():
+                                for x in range(0,len(phrase)):
+                                    if guess == phrase[x].lower():
+                                        display_word[x] = phrase[x]
+                                print(" ".join(display_word))
                         
-                        else:
-                            print("sorry there is no " + guess + "'s in the phrase")
-                            wrong = True
+                            else:
+                                print("sorry there is no " + guess + "'s in the phrase")
+                                wrong = True
 
-                        round_balance[player_turn-1] -= 250
+                            round_balance[player_turn-1] -= 250
+                            break
+                    else:
+                        break    
+                    if wrong:
                         break
                 
             if wrong:
