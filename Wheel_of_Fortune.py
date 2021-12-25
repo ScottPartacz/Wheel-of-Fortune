@@ -276,16 +276,8 @@ def final_round(bank):
     else:
         print("YOU LOSE =(")
 
-
-
 for x in range(0,number_of_normal_rounds):
     bank = rounds(bank)
     #print("\nBank Values: ",bank)
 
 final_round(bank)
-
-
-
-
-
-
